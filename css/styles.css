@@ -1,0 +1,151 @@
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  transition: 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #6366f1;
+  background: #fff;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #6366f1, #4f46e5);
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: 9999px;
+  background: #e5e7eb;
+  font-size: 13px;
+  color: #334155;
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  background: #d1d5db;
+}
+
+.filter-btn.active {
+  background: #4f46e5;
+  color: white;
+}
+
+#todo-list tr {
+  background: transparent;
+  box-shadow: none;
+}
+
+#todo-list td {
+  background: rgba(243, 242, 242, 0.329);
+  padding: 18px 20px;
+  transition: 0.2s;
+}
+
+#todo-list td:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+#todo-list td:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
+#todo-list tr {
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.06));
+  transition: 0.2s;
+}
+
+#todo-list tr:hover {
+  filter: drop-shadow(0 12px 28px rgba(0,0,0,0.09));
+  transform: translateY(-2px);
+}
+
+#todo-list td:first-child {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+#todo-list td:nth-child(2) {
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}
+
+#todo-list td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+#todo-list button {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+#todo-list button:first-child {
+  background: #dcfce7;
+  color: #166534;
+}
+
+#todo-list button:last-child {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+#todo-list td[style*="line-through"] {
+  color: #94a3b8 !important;
+}
+
+.status-active {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  cursor: default;
+}
+
+.status-done {
+  background: #dcfce7;
+  color: #166534;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  cursor: default;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.15s ease-out;
+}
